@@ -5,7 +5,7 @@ using namespace std;
 class Pair {
 protected:
 	long hryvnya;
-	unsigned short kopiyka;
+	unsigned char kopiyka;
 public:
 	Pair() {
 		hryvnya = 0;
@@ -26,6 +26,6 @@ public:
 
 	virtual long getHryvnya() const = 0;
 	virtual unsigned short getKopiyka() const = 0;
-	virtual void setHryvnya(int value) = 0;
-	virtual void setKopiyka(int value) = 0;
+	virtual void setHryvnya(long value) = 0;
+	virtual void setKopiyka(unsigned char value) = 0;
 };

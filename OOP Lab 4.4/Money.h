@@ -7,11 +7,11 @@ using namespace std;
 class Money : public Pair {
 public:
 	Money() : Pair(0, 0) {};
-	Money(long x, unsigned short y) : Pair(x, y) {};
+	Money(long x, unsigned char y) : Pair(x, y) {};
 	virtual long getHryvnya() const override { return hryvnya; };
 	virtual unsigned short getKopiyka() const override { return kopiyka; };
-	virtual void setHryvnya(int value) override { hryvnya = value; };
-	virtual void setKopiyka(int value) override { kopiyka = value; };
+	virtual void setHryvnya(long value) override { hryvnya = value; };
+	virtual void setKopiyka(unsigned  char value) override { kopiyka = value; };
 
 	friend Money operator+ (const Money& other, const Money& other1);
 	friend Money operator- (const Money& other, const Money& other1);

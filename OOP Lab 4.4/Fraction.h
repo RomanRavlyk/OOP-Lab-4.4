@@ -7,11 +7,11 @@ using namespace std;
 class Fraction : public Pair {
 public:
 	Fraction() : Pair(0, 0) {};
-	Fraction(long x, unsigned short y) : Pair(x, y) {};
+	Fraction(long x, unsigned char y) : Pair(x, y) {};
 	virtual long getHryvnya() const override { return hryvnya; };
 	virtual unsigned short getKopiyka() const override { return kopiyka; };
-	virtual void setHryvnya(int value) override { hryvnya = value; };
-	virtual void setKopiyka(int value) override { kopiyka = value; };
+	virtual void setHryvnya(long value) override { hryvnya = value; };
+	virtual void setKopiyka(unsigned char value) override { kopiyka = value; };
 
 	friend Fraction operator+ (const Fraction& other, const Fraction& other1);
 	friend Fraction operator- (const Fraction& other, const Fraction& other1);
